@@ -8,9 +8,8 @@ This analysis is using VBA macros to parse a collection of data concerning the s
 ### Results
 The biggest takeaway for Steve in terms of which stocks he might be comfortable buying into is that 2017 seemed to present a bevy of options, with 9 of the 10 stocks in question having positive net returns for the year, only for 2018 to bring that optimistic outlook down to earth, with only 2 of the 10 seeing positive returns in that year, and only 1 of those 2 increasing it's return value versus 2017.
 
-Insert 2017
-
-Insert 2018
+![Table for green energy stocks in 2017](2017_Return.png)
+![Table for green energy stocks in 2018](2018_Return.png)
 
 This suggests that of the options on display here, RUN might be the best option, with only ENPH seeming like a viable alternative.
 
@@ -61,15 +60,13 @@ Next i
 ```
 This was an improvement on the original code, which ran through the entire dataset for every variable present in the initial array instead of going in order, which led to increased efficiency of the code. The times went from the values seen below...
 
-Insert 2017 old
-
-Insert 2018 old
+![Runtime using initial code for 2017](Original_Code_Run_Time_2017.png)
+![Runtime using initial code for 2018](Original_Code_Run_Time_2018.png)
 
 ...to the much improved times seen here, demonstrating a significant improvement in the efficiency of the code.
 
-Insert 2017 new
-
-Insert 2018 new
+![Runtime using new code for 2017](VBA_Challenge_2017.png)
+![Runtime using new code for 2018](VBA_Challenge_2018.png)
 
 ### Summary
 The advantages of refactoring code are made plain using the relative times of the code being run for the original code and the refactored code. While it may not seem a substantial difference, with both times still falling under a second, when compared the times are actually separated by several orders of magnitude. While that may not be a huge concern in a data set of this size, if extrapolated out into a truly massive set of data it could see an improvement in efficiency that would actually have a noticeable effect on the usability of the code. This example demonstrates how refactoring can generally be used as a tool to improve code, and while it does come at the cost of additional time being spent on what could be already usable and completed code, the returns in efficiency and usability could very easily offset that additional expense on a long enough timeline.
